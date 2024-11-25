@@ -1,29 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <link rel="stylesheet" href="mihasi.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>案件テーブル</title>
     <link rel="icon" type="image/png" href="img/2754582_business man_man_avatar_icon.png">
-</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
+        header {
+            background: linear-gradient(to right, rgb(0, 122, 204), rgba(0, 205, 0, 0.5));
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h4 {
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        caption {
+            text-align: left;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .skills img {
+            height: 40px;
+        }
+
+        .project-table-container {
+            margin-top: 40px;
+        }
+
+        .detail p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            th, td {
+                font-size: 0.9em;
+            }
+
+            h1, h2, h4 {
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+            .skills img {
+                height: 30px;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            header {
+                padding: 20px 10px;
+            }
+        }
+
+
+
+        .skills {
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .skill-icons {
+            display: flex;
+            flex-wrap: wrap; /* 折り返し対応 */
+            gap: 15px; /* アイコン間のスペース */
+            justify-content: flex-start; /* 横方向左揃え */
+            align-items: center; /* アイコンの垂直揃え */
+        }
+        
+        .skill-icons img {
+            width: 50px; /* アイコンの大きさ */
+            height: auto;
+            transition: transform 0.2s ease; /* ホバーアニメーション */
+        }
+        
+        .skill-icons img:hover {
+            transform: scale(1.2); /* ホバー時の拡大 */
+        }
+        
+        h4 {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #333;
+            text-align: left;
+        }
+        
+        @media (max-width: 768px) {
+            .skill-icons {
+                justify-content: center; /* 中央揃え */
+            }
+            h4 {
+                text-align: center; /* 小画面で中央揃え */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .skill-icons img {
+                width: 40px; /* 小画面ではアイコンを少し小さく */
+            }
+        }
+        
+        
+    </style>
+</head>
 <body>
-    <div style="background: linear-gradient(to right, rgb(0, 122, 204), rgba(0, 205, 0, 0.5)); width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;">
+<header>
     <h1>職務経歴書</h1>
-</div>
+</header>
 <main>
     <h2>基本情報</h2>
-
     <table>
         <tr>
-            <th>key</th>
-            <th>value</th>
+            <th>Key</th>
+            <th>Value</th>
         </tr>
         <tr>
             <td>名前</td>
-            <td>三橋 明弘(Mihashi Akihiro)</td>
+            <td>三橋 明弘 (Mihashi Akihiro)</td>
         </tr>
         <tr>
             <td>生年月</td>
@@ -37,55 +186,134 @@
             <td>最終学歴</td>
             <td>栃木県立黒羽高等学校・普通科</td>
         </tr>
+        <tr>
+            <td>資格</td>
+            <td>普通自動車第一種運転免許 (AT限定)</td>
+        </tr>
     </table>
-</main>
-<div class="detail">
 
-    <div class="skill">
-  <h2 class="study">技術スタック<br>2022年8月〜2024年現在まで勉強中</h2>
-  <h4>言語</h4>
-  <img src="https://skillicons.dev/icons?i=js,html,css,python,sql,">
+    <h2>技術スタック</h2>
+    <div class="skills">
+        <h4>言語</h4>
+        <div class="skill-icons">
+            <img src="https://skillicons.dev/icons?i=py" alt="Python">
+            <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
+            <img src="https://skillicons.dev/icons?i=html" alt="HTML">
+            <img src="https://skillicons.dev/icons?i=css" alt="CSS">
+        </div>
+    
+        <h4>フレームワーク</h4>
+        <div class="skill-icons">
+            <img src="https://skillicons.dev/icons?i=django" alt="Django">
+        </div>
+    
+        <h4>DB</h4>
+        <div class="skill-icons">
+            <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL">
+            <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">
+        </div>
+    
+        <h4>その他</h4>
+        <div class="skill-icons">
+            <img src="https://skillicons.dev/icons?i=docker" alt="Docker">
+            <img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code">
+            <img src="https://skillicons.dev/icons?i=heroku" alt="Heroku">
+            <img src="https://skillicons.dev/icons?i=nginx" alt="Nginx">
+        </div>
+    </div>
+    
 
-  <h4>フレームワーク・その他</h4>
-  <img src="https://skillicons.dev/icons?i=postgres,vscode,heroku,nginx">
-  <img src="https://img.shields.io/badge/-Docker%20v20.10.22-blue">
-  <img src="https://skillicons.dev/icons?i=django">
-
-  <h4>GitHubアカウント</h4>
-  <a href="https://github.com/mihasi0818/Curriculum_Vitae999">
-    <img src="https://img.shields.io/badge/GitHub-mihasi0818-blue?style=flat&logo=github" alt="GitHub">
-  </a>
-  <h4>現在勉強してること</h4>
-  <p>•docker,python,Linux,nginx</p>
-</div>
     <h2>職務経歴詳細</h2>
-    <h4>陸上自衛隊(一般陸曹候補生2022年3月から2022年5月)</h4>
-    <p>・主に一般陸曹になるための、基本教練、射撃訓練、体力作り</p>
-    <p>・40人での集団訓練</p>
-    <h4>株式会社平山（派遣社員2022年6月から2022年11月）</h4>
-    <p>・半導体の製造（主にパソコンを使用し、複数の機械を操縦）</p>
-    <p>・主に4人で作業する</p>
-    <p>・1〜3人の時がありましたが、効率を考え、順調に作業</p>
-    </p>
-    <h4>株式会社iRup（契約社員2023年7月から2024年4月）</h4>
-    <p>案件1 (2023年3月~2023年4月)</p>
-    <p>・移行ツールの開発作業,テスト支援,データ移行作業等</p>
+    <div class="detail">
+        <h4>陸上自衛隊 (一般陸曹候補生: 2022年3月 ～ 2022年5月)</h4>
+        <p>- 基本教練、射撃訓練、体力作り</p>
+        <p>- 40人での集団訓練</p>
 
+        <h4>株式会社平山 (派遣社員: 2022年6月 ～ 2022年11月)</h4>
+        <p>- 半導体製造 (複数機械の操縦、パソコン操作)</p>
+        <p>- 4人でのチーム作業 (効率的に順調に進行)</p>
+    </div>
 
-    <h2>興味・意欲</h2>
-    <p>・新しい技術が欲しくてプログラミング興味を持ち、ほとんど独学でwebサイトを作りました。</p>
-    <p>・常にスキルアップに向けて、勉強します。将来はaiエンジニアになりたいです。</p>
-
-    <h2>強み</h2>
-    <p>未経験ですが、早く即戦力になれるように、ほとんど独学でdocker,rails7を使ってherokuにデプロイまでやりました。</p>
-    <p>継続的な努力と忍耐は私の中核的な価値です。現場での難しい課題に直面しても、長期的な目標に向けての取り組みを継続し、問題を解決することに力を注いでいます。この姿勢は、ITの世界での成功への確固たる信念となっており、どんなプロジェクトにも積極的に取り組む原動力となっています。
-        これらの実務経験と持ち前のスキルを活かし、私は開発現場で最大の貢献を果たしています。</p>
-</div>
-
+    <div class="project-table-container">
+        <h2>案件情報</h2>
+        <table>
+            <caption>案件1</caption>
+            <tbody>
+                <tr>
+                    <td>時期</td>
+                    <td>2024/03/01 ～ 2024/05/31</td>
+                </tr>
+                <tr>
+                    <td>概要</td>
+                    <td>複数の施設や店舗を運営する企業のための一元管理可能なオンライン予約システムを開発。システムは、ユーザーに施設の利用時間の予約やキャンセル、予約の確認などの機能を提供する。</td>
+                </tr>
+                <tr>
+                    <td>業務内容</td>
+                    <td>
+                        - 結合テスト実行<br>
+                        - 障害一覧作成
+                    </td>
+                </tr>
+                <tr>
+                    <td>言語</td>
+                    <td>Python, HTML, CSS, GCP</td>
+                </tr>
+                <tr>
+                    <td>環境</td>
+                    <td>Linux</td>
+                </tr>
+                <tr>
+                    <td>役割</td>
+                    <td>テスター</td>
+                </tr>
+                <tr>
+                    <td>期間</td>
+                    <td>1ヶ月</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <caption>案件2</caption>
+            <tbody>
+                <tr>
+                    <td>時期</td>
+                    <td>2024/06/01 ～ 継続中</td>
+                </tr>
+                <tr>
+                    <td>概要</td>
+                    <td>
+                        自社で開発・販売を行っているSoftware-Defined Storage(Mankai)の検証<br>
+                        APIを使用して機能テストを実施
+                    </td>
+                </tr>
+                <tr>
+                    <td>業務内容</td>
+                    <td>
+                        - テスト仕様書の作成(入力パラメータや出力/レスポンス)<br>
+                        - 自動テストコード作成(unittest,Pytest)<br>
+                        - 障害一覧作成
+                    </td>
+                </tr>
+                <tr>
+                    <td>言語</td>
+                    <td>Python, Go, HTML, CSS, Vue,</td>
+                </tr>
+                <tr>
+                    <td>環境</td>
+                    <td>Linux(ubuntu,RockyLinux9,CentOS8), GitHub, chatwork, Docker, niginx</td>
+                </tr>
+                <tr>
+                    <td>役割</td>
+                    <td>QA</td>
+                </tr>
+                <tr>
+                    <td>期間</td>
+                    <td>継続中</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 案件2も同様に記述 -->
+    </div>
+</main>
 </body>
 </html>
-<style>
-    .study {
-        white-space: nowrap;
-    }
-</style>
