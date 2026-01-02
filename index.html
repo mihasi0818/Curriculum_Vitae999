@@ -161,7 +161,7 @@
 </head>
 <body>
 <header>
-    <h1>職務経歴書</h1>
+    <h1>スキルシート</h1>
 </header>
 <main>
     <h2>基本情報</h2>
@@ -183,12 +183,8 @@
             <td>栃木県</td>
         </tr>
         <tr>
-            <td>最終学歴</td>
-            <td>栃木県立黒羽高等学校・普通科</td>
-        </tr>
-        <tr>
             <td>資格</td>
-            <td>普通自動車第一種運転免許 (AT限定)</td>
+            <td>Linux技術者認定試験 LinuC レベル1 / オープンソースデータベース技術者認定試験 Silver</td>
         </tr>
     </table>
 
@@ -205,8 +201,11 @@
         <h4>フレームワーク</h4>
         <div class="skill-icons">
             <img src="https://skillicons.dev/icons?i=django" alt="Django">
+            <img src="https://skillicons.dev/icons?i=rails" alt="Rails">
         </div>
-    
+    </div>
+
+    <div class="skills">
         <h4>DB</h4>
         <div class="skill-icons">
             <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL">
@@ -215,6 +214,7 @@
     
         <h4>その他</h4>
         <div class="skill-icons">
+            <img src="https://skillicons.dev/icons?i=linux" alt="Linux">
             <img src="https://skillicons.dev/icons?i=docker" alt="Docker">
             <img src="https://skillicons.dev/icons?i=vscode" alt="Visual Studio Code">
             <img src="https://skillicons.dev/icons?i=heroku" alt="Heroku">
@@ -222,98 +222,267 @@
         </div>
     </div>
     
+<div class="portfolio-container">
+    <h2>ポートフォリオ（個人開発）</h2>
 
-    <h2>職務経歴詳細</h2>
-    <div class="detail">
-        <h4>陸上自衛隊 (一般陸曹候補生: 2022年3月 ～ 2022年5月)</h4>
-        <p>- 基本教練、射撃訓練、体力作り</p>
-        <p>- 40人での集団訓練</p>
+    <table>
+        <caption>モバイルレジェンド 攻略投稿サイト</caption>
+        <tbody>
+            <tr>
+                <td>概要</td>
+                <td>
+                    モバイルレジェンドの攻略情報を、ユーザー投稿形式で共有できるWebサイトを個人で開発。
+                </td>
+            </tr>
 
-        <h4>株式会社平山 (派遣社員: 2022年6月 ～ 2022年11月)</h4>
-        <p>- 半導体製造 (複数機械の操縦、パソコン操作)</p>
-        <p>- 4人でのチーム作業 (効率的に順調に進行)</p>
-    </div>
+            <tr>
+                <td>開発内容</td>
+                <td>
+                    ・ユーザーが攻略方法を投稿・閲覧できる仕組みを設計・実装<br>
+                    ・ログイン後のみ投稿可能な導線設計<br>
+                    ・おすすめ／有利／不利キャラクターを必須選択とする入力バリデーション実装<br>
+                    ・2体目以降は任意選択とし、自由度を持たせた投稿仕様
+                </td>
+            </tr>
 
-    <div class="project-table-container">
-        <h2>案件情報</h2>
-        <table>
-            <caption>案件1</caption>
-            <tbody>
-                <tr>
-                    <td>時期</td>
-                    <td>2024/03/01 ～ 2024/05/31</td>
-                </tr>
-                <tr>
-                    <td>概要</td>
-                    <td>複数の施設や店舗を運営する企業のための一元管理可能なオンライン予約システムを開発。システムは、ユーザーに施設の利用時間の予約やキャンセル、予約の確認などの機能を提供する。</td>
-                </tr>
-                <tr>
-                    <td>業務内容</td>
-                    <td>
-                        - 結合テスト実行<br>
-                        - 障害一覧作成
-                    </td>
-                </tr>
-                <tr>
-                    <td>言語</td>
-                    <td>Python, HTML, CSS, GCP</td>
-                </tr>
-                <tr>
-                    <td>環境</td>
-                    <td>Linux</td>
-                </tr>
-                <tr>
-                    <td>役割</td>
-                    <td>テスター</td>
-                </tr>
-                <tr>
-                    <td>期間</td>
-                    <td>1ヶ月</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <caption>案件2</caption>
-            <tbody>
-                <tr>
-                    <td>時期</td>
-                    <td>2024/06/01 ～ 継続中</td>
-                </tr>
-                <tr>
-                    <td>概要</td>
-                    <td>
-                        自社で開発・販売を行っているSoftware-Defined Storage(Mankai)の検証<br>
-                        APIを使用して機能テストを実施
-                    </td>
-                </tr>
-                <tr>
-                    <td>業務内容</td>
-                    <td>
-                        - テスト仕様書の作成(入力パラメータや出力/レスポンス)<br>
-                        - 自動テストコード作成(unittest,Pytest)<br>
-                        - 障害一覧作成
-                    </td>
-                </tr>
-                <tr>
-                    <td>言語</td>
-                    <td>Python, Go, HTML, CSS, Vue,</td>
-                </tr>
-                <tr>
-                    <td>環境</td>
-                    <td>Linux(ubuntu,RockyLinux9,CentOS8), GitHub, chatwork, Docker, niginx</td>
-                </tr>
-                <tr>
-                    <td>役割</td>
-                    <td>QA</td>
-                </tr>
-                <tr>
-                    <td>期間</td>
-                    <td>継続中</td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- 案件2も同様に記述 -->
-    </div>
+            <tr>
+                <td>自分が書いたコード</td>
+                <td>
+                    ・Ruby on Rails 7 によるWebアプリケーション全体の実装<br>
+                    ・投稿機能、認証機能、UI制御ロジックの実装
+                </td>
+            </tr>
+
+            <tr>
+                <td>使用技術</td>
+                <td>
+                    Ruby / Ruby on Rails 7 / HTML / CSS
+                </td>
+            </tr>
+
+            <tr>
+                <td>環境・構成</td>
+                <td>
+                    Heroku / Puma<br>
+                    Ruby 3.2.2 / Rails 7.0.4.3<br>
+                    gem：pagy / semantic-ui-sass
+                </td>
+            </tr>
+
+            <tr>
+                <td>機能一覧</td>
+                <td>
+                    ・ユーザー登録／ログイン（SendGridによるメール認証）<br>
+                    ・パスワードリセット機能<br>
+                    ・ゲストユーザー機能<br>
+                    ・投稿／詳細表示／マイページ<br>
+                    ・フォロー／フォロワー機能<br>
+                    ・コメント機能<br>
+                    ・いいね機能<br>
+                    ・並び替え（新しい順／古い順／いいね順）
+                </td>
+            </tr>
+
+            <tr>
+                <td>UI/UXの工夫</td>
+                <td>
+                    ・新規登録画面でキャラクターの能力をCSSで表現<br>
+                    ・マイページでは炎をイメージしたCSSデザインを実装
+                </td>
+            </tr>
+
+            <tr>
+                <td>開発期間</td>
+                <td>約2ヶ月</td>
+            </tr>
+
+            <tr>
+                <td>位置付け</td>
+                <td>
+                    実務外での個人開発（設計〜実装〜デプロイまで一貫して担当）
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+  <div class="project-table-container">
+    <h2>案件情報</h2>
+
+    <!-- 案件1 -->
+    <table>
+        <caption>案件1</caption>
+        <tbody>
+            <tr>
+                <td>時期</td>
+                <td>2024/03/01 ～ 2024/05/31</td>
+            </tr>
+            <tr>
+                <td>概要</td>
+                <td>
+                    複数の施設や店舗を運営する企業向けに、一元管理可能なオンライン予約システムを開発。<br>
+                    施設の利用時間の予約・キャンセル・予約確認機能を提供するWebシステム。
+                </td>
+            </tr>
+            <tr>
+                <td>業務内容</td>
+                <td>
+                    ・結合テストの実行<br>
+                    ・テスト結果を基にした障害一覧の作成
+                </td>
+            </tr>
+            <tr>
+                <td>自分が書いたコード</td>
+                <td>
+                    ・テスト実行／結果を整理
+                </td>
+            </tr>
+            <tr>
+                <td>言語</td>
+                <td>Python（テスト実行・確認用途）</td>
+            </tr>
+            <tr>
+                <td>環境</td>
+                <td>Linux / GCP</td>
+            </tr>
+            <tr>
+                <td>役割</td>
+                <td>テスター</td>
+            </tr>
+            <tr>
+                <td>期間</td>
+                <td>約2ヶ月</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 案件2 -->
+    <table>
+        <caption>案件2</caption>
+        <tbody>
+            <tr>
+                <td>時期</td>
+                <td>2024/06/01 ～ 継続中</td>
+            </tr>
+            <tr>
+                <td>概要</td>
+                <td>
+                    自社で開発・販売している Software-Defined Storage（Mankai）の検証業務。<br>
+                    APIを使用した機能テストを中心に品質保証を担当。
+                </td>
+            </tr>
+            <tr>
+                <td>業務内容</td>
+                <td>
+                    ・API仕様に基づくテスト仕様書の作成（入力パラメータ／レスポンス）<br>
+                    ・自動テストの実装および実行<br>
+                    ・障害一覧の作成
+                </td>
+            </tr>
+            <tr>
+                <td>自分が書いたコード</td>
+                <td>
+                    ・Python による API 自動テストコード（unittest / pytest）
+                </td>
+            </tr>
+            <tr>
+                <td>言語</td>
+                <td>
+                    Python（自動テスト実装）<br>
+                    Go / Vue（既存コードの読解のみ）
+                </td>
+            </tr>
+            <tr>
+                <td>環境</td>
+                <td>
+                    Linux（Ubuntu / RockyLinux9 / CentOS8）<br>
+                    Docker / GitHub / Chatwork / Nginx
+                </td>
+            </tr>
+            <tr>
+                <td>役割</td>
+                <td>QAエンジニア（APIテスト／自動化寄り）</td>
+            </tr>
+            <tr>
+                <td>期間</td>
+                <td>継続中</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 案件3 -->
+    <table>
+        <caption>案件3</caption>
+        <tbody>
+            <tr>
+                <td>時期</td>
+                <td>2025/07/04 ～ 継続中</td>
+            </tr>
+            <tr>
+                <td>概要</td>
+                <td>
+                    自社で開発・販売している分散ストレージシステム（iai）の検証業務。<br>
+                    Linux環境における性能・スケーラビリティ評価を中心に担当。
+                </td>
+            </tr>
+            <tr>
+                <td>業務内容</td>
+                <td>
+                ・fio を用いた性能テストの設計・実行<br>
+                ・ワークロード（seqread / seqwrite / randread / randwrite）の切り替え検証<br>
+                ・ノード構成差（1ノード／複数ノード）による性能比較<br>
+                ・テスト結果の取得、整理、報告
+                </td>
+            </tr>
+            <tr>
+                <td>自分が書いたコード</td>
+                <td>
+                    ・fio 実行条件を切り替える自作 Shell スクリプト<br>
+                    ・ログをノード別／日時別に保存・整理するスクリプト
+                </td>
+            </tr>
+            <tr>
+            <td>使用ツール</td>
+            <td>
+               fio
+            </td>
+            </tr>
+            <tr>
+                <td>扱った指標</td>
+                <td>
+                    ・IOPS<br>
+                    ・スループット（MB/s）<br>
+                    ・レイテンシ（平均値／最大値）
+                </td>
+            </tr>
+            <tr>
+                <td>言語</td>
+                <td>Shell（テスト自動化）</td>
+            </tr>
+            <tr>
+                <td>環境</td>
+                <td>
+                    Linux（Ubuntu / RockyLinux9 / CentOS8）<br>
+                    Docker / GitHub / Chatwork / Nginx
+                </td>
+            </tr>
+            <tr>
+                <td>役割</td>
+                <td>QAエンジニア（インフラ・性能評価寄り）</td>
+            </tr>
+            <tr>
+                <td>期間</td>
+                <td>継続中</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+</div>
 </main>
 </body>
 </html>
